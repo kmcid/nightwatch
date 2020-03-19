@@ -1,0 +1,30 @@
+{
+    "src_folders": ["tests"],
+    "globals_path" : "../examples/globalsModule.js",
+    "test_settings": {
+      "default": {
+        "selenium": {
+          "host": "localhost",
+          "port": 4444
+        },
+        "webdriver": {
+          "keep_alive": true
+        },
+        "desiredCapabilities": {
+          "browserName": "chrome",
+          "javascriptEnabled": true,
+          "acceptSslCerts": true,
+          "acceptInsecureCerts" : true,
+          "enableLog": true,
+          "enableVNC": true,
+          "enableVideo": true,
+          "timeouts": {
+            "pageLoad": 120000
+          },
+          "chromeOptions": {
+            "w3c": false
+          }
+        }
+      }
+    }
+  }
