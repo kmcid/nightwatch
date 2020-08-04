@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+const browserstackIdentifierIndex = 
+    process.argv.findIndex(argv => argv === '--browserstack-identifier');
+const browserstackIdentifier = process.argv[browserstackIdentifierIndex + 1];
+require('./local.runner.js')(browserstackIdentifier);
